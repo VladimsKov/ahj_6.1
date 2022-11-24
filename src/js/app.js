@@ -1,4 +1,4 @@
 // TODO: write code here
-import CardSys from "./component";
+import CardSys from './component';
 
 const cardsSys = new CardSys();
