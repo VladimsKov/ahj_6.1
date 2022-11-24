@@ -4,7 +4,8 @@ stack: node 16  # окружение
 
 branches:
   only:
-    - master  # ветка git
+    - main  # ветка git
+    - master
 
 cache: node_modules  # кеширование
 
