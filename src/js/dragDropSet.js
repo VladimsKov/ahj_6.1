@@ -42,7 +42,7 @@ export default function dragDropSet(container, addBtns) {
     ghostEl.style.top = `${evt.pageY - EvtGhostElTop}px`;
 
     // создание свободного поля для вставки
-    inputFieldCoords = CardSys.freeInputFieldSet(container, evt, ghostEl);
+    CardSys.freeInputFieldSet(container, evt, ghostEl, inputFieldCoords);
     draggedEl.classList.add('hidden');
   });
 

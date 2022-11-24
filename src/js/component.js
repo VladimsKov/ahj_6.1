@@ -93,8 +93,7 @@ export default class CardSys {
   }
 
   // добавление свободного поля для вставки при перемещении над любым эл-ом <*.card>
-  static freeInputFieldSet(container, evt, ghostEl) {
-    const inputFieldCoords = {};
+  static freeInputFieldSet(container, evt, ghostEl, inputFieldCoords) {
     const closestEl = document.elementFromPoint(evt.clientX, evt.clientY);
     const { top } = closestEl.getBoundingClientRect();
 
