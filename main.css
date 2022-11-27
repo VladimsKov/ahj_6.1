@@ -1,0 +1,109 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  display: flex;
+  padding: 8px;
+  width: 600px;
+  background-color: #0080c0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.col {
+  width: calc(100% / 3);
+  background-color: #dee2e5;
+  padding: 8px;
+  border-radius: 3px;
+}
+.col:not(:last-child) {
+  margin-right: 8px;
+}
+.colTitle {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.addBtn {
+  padding: 10px;
+  margin: 0 -8px -8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.addBtn:hover {
+  background-color: #C3CBCF;
+  text-decoration: underline;  
+}
+.addBtndragstyle {
+  cursor: grabbing;
+}
+.addBtndragstyle:hover {
+  background-color: transparent;
+  text-decoration: none;  
+}
+.textareastyle {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 6px;
+  resize: none;  
+}
+.addfield {
+  font-size: 14px;
+}
+.addfield > span {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.setbtn {
+  cursor: pointer;
+}
+
+.card {
+  margin-bottom: 10px;
+  min-height: 50px;
+  padding: 3px;
+  color: #244152;
+  font-size: 14px;
+  word-break: break-all;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 3px;  
+}
+.card:hover {
+  background-color: #F5F6F7;
+}
+
+.dragged {
+  position: absolute;
+  pointer-events: none;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  
+  
+  box-sizing: border-box;
+  border: 2px solid gray;
+  
+  z-index: 999;
+}
+
+.closecard {
+  display: flex;  
+  width: 2em;
+  height: 2em;
+  float: right;
+  background-color: #c9cfd3;
+  border-radius: 3px;
+  font-size: 0.7em;  
+}
+.closecard:hover {
+  cursor: pointer;  
+}
+.closecard span {
+  margin: auto;  
+}
+
+.hidden {
+  display: none;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5jc3MiLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxZQUFZO0VBQ1osV0FBVztBQUNiO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsWUFBWTtFQUNaLFlBQVk7RUFDWix5QkFBeUI7RUFDekIsdUxBQXVMO0FBQ3pMO0FBQ0E7RUFDRSxxQkFBcUI7RUFDckIseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLGlCQUFpQjtBQUNuQjtBQUNBO0VBQ0UsbUJBQW1CO0VBQ25CLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsZUFBZTtFQUNmLGVBQWU7QUFDakI7QUFDQTtFQUNFLHlCQUF5QjtFQUN6QiwwQkFBMEI7QUFDNUI7QUFDQTtFQUNFLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsNkJBQTZCO0VBQzdCLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0Usc0JBQXNCO0VBQ3RCLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsWUFBWTtBQUNkO0FBQ0E7RUFDRSxlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxpQkFBaUI7RUFDakIsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxtQkFBbUI7RUFDbkIsZ0JBQWdCO0VBQ2hCLFlBQVk7RUFDWixjQUFjO0VBQ2QsZUFBZTtFQUNmLHFCQUFxQjtFQUNyQixzQkFBc0I7RUFDdEIsc0JBQXNCO0VBQ3RCLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLG9CQUFvQjtFQUNwQix1TEFBdUw7OztFQUd2TCxzQkFBc0I7RUFDdEIsc0JBQXNCOztFQUV0QixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsVUFBVTtFQUNWLFdBQVc7RUFDWCxZQUFZO0VBQ1oseUJBQXlCO0VBQ3pCLGtCQUFrQjtFQUNsQixnQkFBZ0I7QUFDbEI7QUFDQTtFQUNFLGVBQWU7QUFDakI7QUFDQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGFBQWE7QUFDZiIsInNvdXJjZXMiOlsid2VicGFjazovL2Fqcy8uL3NyYy9jc3Mvc3R5bGUuY3NzIl0sInNvdXJjZXNDb250ZW50IjpbImh0bWwsIGJvZHkge1xuICBoZWlnaHQ6IDEwMCU7XG4gIHdpZHRoOiAxMDAlO1xufVxuLmNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIHBhZGRpbmc6IDhweDtcbiAgd2lkdGg6IDYwMHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDA4MGMwO1xuICBmb250LWZhbWlseTogLWFwcGxlLXN5c3RlbSxCbGlua01hY1N5c3RlbUZvbnQsXCJTZWdvZSBVSVwiLFJvYm90byxcIkhlbHZldGljYSBOZXVlXCIsQXJpYWwsXCJOb3RvIFNhbnNcIixzYW5zLXNlcmlmLFwiQXBwbGUgQ29sb3IgRW1vamlcIixcIlNlZ29lIFVJIEVtb2ppXCIsXCJTZWdvZSBVSSBTeW1ib2xcIixcIk5vdG8gQ29sb3IgRW1vamlcIjtcbn1cbi5jb2wge1xuICB3aWR0aDogY2FsYygxMDAlIC8gMyk7XG4gIGJhY2tncm91bmQtY29sb3I6ICNkZWUyZTU7XG4gIHBhZGRpbmc6IDhweDtcbiAgYm9yZGVyLXJhZGl1czogM3B4O1xufVxuLmNvbDpub3QoOmxhc3QtY2hpbGQpIHtcbiAgbWFyZ2luLXJpZ2h0OiA4cHg7XG59XG4uY29sVGl0bGUge1xuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xuICBmb250LXdlaWdodDogNDAwO1xufVxuXG4uYWRkQnRuIHtcbiAgcGFkZGluZzogMTBweDtcbiAgbWFyZ2luOiAwIC04cHggLThweDtcbiAgZm9udC1zaXplOiAxNHB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4uYWRkQnRuOmhvdmVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI0MzQ0JDRjtcbiAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7ICBcbn1cbi5hZGRCdG5kcmFnc3R5bGUge1xuICBjdXJzb3I6IGdyYWJiaW5nO1xufVxuLmFkZEJ0bmRyYWdzdHlsZTpob3ZlciB7XG4gIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7ICBcbn1cbi50ZXh0YXJlYXN0eWxlIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgd2lkdGg6IDEwMCU7XG4gIG1hcmdpbi1ib3R0b206IDZweDtcbiAgcmVzaXplOiBub25lOyAgXG59XG4uYWRkZmllbGQge1xuICBmb250LXNpemU6IDE0cHg7XG59XG4uYWRkZmllbGQgPiBzcGFuIHtcbiAgbWFyZ2luLWxlZnQ6IDEwcHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuLnNldGJ0biB7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuLmNhcmQge1xuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xuICBtaW4taGVpZ2h0OiA1MHB4O1xuICBwYWRkaW5nOiAzcHg7XG4gIGNvbG9yOiAjMjQ0MTUyO1xuICBmb250LXNpemU6IDE0cHg7XG4gIHdvcmQtYnJlYWs6IGJyZWFrLWFsbDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcbiAgYm9yZGVyOiAxcHggc29saWQgZ3JheTtcbiAgYm9yZGVyLXJhZGl1czogM3B4OyAgXG59XG4uY2FyZDpob3ZlciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNGNUY2Rjc7XG59XG5cbi5kcmFnZ2VkIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBwb2ludGVyLWV2ZW50czogbm9uZTtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sQmxpbmtNYWNTeXN0ZW1Gb250LFwiU2Vnb2UgVUlcIixSb2JvdG8sXCJIZWx2ZXRpY2EgTmV1ZVwiLEFyaWFsLFwiTm90byBTYW5zXCIsc2Fucy1zZXJpZixcIkFwcGxlIENvbG9yIEVtb2ppXCIsXCJTZWdvZSBVSSBFbW9qaVwiLFwiU2Vnb2UgVUkgU3ltYm9sXCIsXCJOb3RvIENvbG9yIEVtb2ppXCI7XG4gIFxuICBcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgYm9yZGVyOiAycHggc29saWQgZ3JheTtcbiAgXG4gIHotaW5kZXg6IDk5OTtcbn1cblxuLmNsb3NlY2FyZCB7XG4gIGRpc3BsYXk6IGZsZXg7ICBcbiAgd2lkdGg6IDJlbTtcbiAgaGVpZ2h0OiAyZW07XG4gIGZsb2F0OiByaWdodDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2M5Y2ZkMztcbiAgYm9yZGVyLXJhZGl1czogM3B4O1xuICBmb250LXNpemU6IDAuN2VtOyAgXG59XG4uY2xvc2VjYXJkOmhvdmVyIHtcbiAgY3Vyc29yOiBwb2ludGVyOyAgXG59XG4uY2xvc2VjYXJkIHNwYW4ge1xuICBtYXJnaW46IGF1dG87ICBcbn1cblxuLmhpZGRlbiB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=*/
